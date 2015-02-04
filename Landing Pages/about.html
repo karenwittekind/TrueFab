@@ -1,4 +1,3 @@
-<script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
 <style>
 h2{
   margin-top: 1em;
@@ -17,15 +16,15 @@ p{
 }
 </style>
 <section id="tfBodyText">
-<ul id="innerNav">
-	<li><a href="#who">Who We Are</a></li>
-	<li><a href="#guarantee">Our Guarantees</a></li>
-	<li><a href="#jobs">Jobs At True</a></li>
-</ul>
+<!-- <ul id="innerNav">
+  <li><a href="/about?target=who">Who We Are</a></li>
+  <li><a href="/about?target=guarantee">Our Guarantees</a></li>
+  <li><a href="/about?target=jobs">Jobs At True</a></li>
+</ul> -->
 
 <h2 id="who">Who We Are</h2>
 
-<p class="scrollLink"><a href="#innerNav">Top</a></p>
+<!-- <p class="scrollLink"><a href="/about?target=innerNav">Top</a></p> -->
 
 <p>True Fabrications is the leading wine lifestyle brand and marketer for thousands of wine retailers around the world.  We value satisfied customers above all else by providng exceptional service, high quality products, and attractive retail packaging at the most competitive prices.  True Fabrications' reputation witho ur customer is backed by our 100% Satisfaction Guarantee on all of our products and services.</p>
 
@@ -35,7 +34,7 @@ p{
 
 <h2 id="guarantee">Our Guarantees</h2>
 
-<p class="scrollLink"><a href="#innerNav">Top</a></p>
+<!-- <p class="scrollLink"><a href="/about?target=innerNav">Top</a></p> -->
 
 
 <h3>Same-Day Shipping</h3>
@@ -49,7 +48,7 @@ p{
 
 <h2 id="jobs">Jobs at True</h2>
 
-<p class="scrollLink"><a href="#innerNav">Top</a></p>
+<!-- <p class="scrollLink"><a href="/about?target=innerNav">Top</a></p> -->
 
 <h3>Our Story</h3>
 
@@ -84,21 +83,5 @@ p{
 <p><strong>WE ACT FROM THE FUTURE</strong></p>
 
 <p>Tomorrow is coming, and we’re here to define it.</p></section>
-<br /><p class="scrollLink"><a href="#innerNav">Top</a></p>
+<br /><!-- <p class="scrollLink"><a href="/about?target=innerNav">Top</a></p> -->
 
-<script>
-$(function() {
-  $('a[href*=#]:not([href=#])').click(function() {
-    if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
-      var target = $(this.hash);
-      target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
-      if (target.length) {
-        $('html,body').animate({
-          scrollTop: target.offset().top
-        }, 1000);
-        return false;
-      }
-    }
-  });
-});
-</script>
