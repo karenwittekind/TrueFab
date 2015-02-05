@@ -1,15 +1,71 @@
-h2{
+.tfBodyText {
+  font-family: 'Montserrat', sans-serif;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.tfBodyText h2{
+  font-family: 'Montserrat', sans-serif;  
   margin-top: 1em;
   margin-bottom: 1em;
 }
 
-h3{
+.tfBodyText h3{
+  font-size: 1.75em;
+  font-family: 'Montserrat', sans-serif;
+  color: #b0bc22;
+  font-weight: bold;
+  margin-top: 1em;
+  margin-bottom: .25em;
+}
+
+.tfBodyText h4{
   font-size: 1.5em;
+  font-family: 'Montserrat', sans-serif;
   margin-top: 1em;
   margin-bottom: 1em;
 }
 
-p{
+.tfBodyText h5{
+  font-size: 1em;
+  font-family: sans-serif;
+  font-style: italic;
   margin-top: 1em;
   margin-bottom: 1em;
+}
+
+.tfBodyText ul{
+  font-size: 1.25em;
+  line-height: 25px;
+  margin-top: 1em;
+  margin-bottom: 1em;
+  font-family: sans-serif;
+}
+
+.tfBodyText p{
+  font-size: 1em;
+  margin-top: 1em;
+  margin-bottom: 1em;
+  font-family: sans-serif;
+}
+
+/* unvisited link */
+a:link {
+    color: #B0BC22;
+}
+
+/* visited link */
+a:visited {
+    color: #B0BC22;
+}
+
+/* mouse over link */
+a:hover {
+    color: #c4d333;
+    text-decoration: none;
+}
+
+/* selected link */
+a:active {
+    color: #B0BC22;
 }
