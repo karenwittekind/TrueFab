@@ -8,21 +8,90 @@
 	height: 300px;
 	width: 100%;
 	min-width: 300px;
+  margin-left: auto;
+  margin-right: auto;
 }	
 
+.catalogImage{
+  width: 30%;
+  min-width: 50px;
+  max-width: 800px;
+  display: inline-block;
+  align:left;
+  position: relative;
+}
+
+.catalogText{
+  display: inline-block;
+  align:right;
+  width: 65%;
+  vertical-align: top;
+  position: relative;
+}
+
+
 .catalogRow img{
-	width: 200px;
 	margin-right: 25px;
+  position: relative;
 }
 
 .catalogRow h1{
 	margin: 10px;
+  margin-top: 0px;
+  vertical-align: top;
+  font-size: 1.5em;
+  font-weight: normal;
+}
 
+.catalogRow h2{
+  margin: 10px;
+  vertical-align: top;
+  text-transform: uppercase;
 }
 
 .catalogRow p{
 	margin: 10px;
+  vertical-align: top;
+  white-space: normal;
 }
+
+.catalogRow ul{
+  margin: 10px;
+  margin-left: 25px;
+  vertical-align: top;
+  white-space: normal;
+}
+
+.catalogName{
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+.otherCatalogs{
+  margin:0;
+  padding:0;
+}
+
+  .otherCatalogs li {
+    display: block;
+    float: left;
+    margin-right: 24px;
+  }
+
+    .otherCatalogs li:last-child {
+      margin-right: 0;
+    }
+    
+    .otherCatalogs li a {
+      text-align: center;
+    }
+
+    .otherCatalogs li a img {
+      display: block;
+      margin: 0;
+      padding: 0;
+      border: 0;
+    }
 
 </style>
 
@@ -32,17 +101,78 @@
 <section id="catalog">
 
   <div class="catalogRow">
-	 <img src="http://www.truefabrications.com/catalog/00_W14_Cover.jpg" />
+    <div class="catalogImage">
+  	 <a href="http://catalog.truefabrications.com/pdf/viewer/?file=../winter2014.pdf"><img src="http://www.truefabrications.com/catalog/00_W14_Cover.jpg" style="border: solid 2px #c3c3c3;" /></a>
+    </div>
+    <div class="catalogText">
+     <h1>The <span class="catalogName">WINTER 2014 CATALOG</span> is here!</h1>
+     <p>At last, it's time for more than just a glimpse. We're celebrating 10 years with hundreds of new & innovative products, curated collections, and everyday essentials.</p>
+     <h2>Get Yours:</h2>
+      <ul>
+        <li><a href="http://catalog.truefabrications.com/pdf/viewer/?file=../winter2014.pdf">View Online</a></li>
+        <li><a href="http://catalog.truefabrications.com/pdf/winter2014.pdf">Download (PDF)</a></li>
+        <li><a href="http://www.truefabrications.com/requestcatalog.asp">Request a Copy (via US Mail)</a></li>
+      </ul>
+    </div>
   </div>
 
   <div class="catalogRow">
-    <img src="http://www.truefabrications.com/catalog/00_W14_Cover.jpg" />
+    <div class="catalogImage">
+     <a href="http://catalog.truefabrications.com/pdf/viewer/?file=../HOST_2014.pdf"><img src="http://www.truefabrications.com/catalog/host14.gif" style="margin-top: -7px;" /></a>
+    </div>
+    <div class="catalogText">
+     <h1>The <span class="catalogName">Host 2014 CATALOG</span> is also here!</h1>
+     <h2>Get Yours:</h2>
+      <ul>
+        <li><a href="http://catalog.truefabrications.com/pdf/viewer/?file=../HOST_2014.pdf">View Online</a></li>
+        <li><a href="http://catalog.truefabrications.com/pdf/HOST_2014.pdf">Download (PDF)</a></li>
+      </ul>
+    </div>
   </div>
 
   <div class="catalogRow">
-    <img src="http://www.truefabrications.com/catalog/00_W14_Cover.jpg" />
+    <div class="catalogImage">
+     <a href="http://catalog.truefabrications.com/pdf/viewer/?file=../twinecatalog.pdf"><img src="http://www.truefabrications.com/catalog/twine14.jpg" /></a>
+    </div>
+    <div class="catalogText">
+     <h1>The <span class="catalogName">Summer 2014 CATALOG</span> is here!</h1>
+     <p>Twine makes market trends accessible through unique products that evoke a feeling of finding a hidden treasure. Buy a whole collection or select pieces from each to create an experience all your own.</p>
+     <h2>Get Yours:</h2>
+      <ul>
+        <li><a href="http://catalog.truefabrications.com/pdf/viewer/?file=../twinecatalog.pdf">View Online</a></li>
+        <li><a href="http://catalog.truefabrications.com/pdf/twinecatalog.pdf">Download (PDF)</a></li>
+        <li><a href="http://www.truefabrications.com/requestcatalog.asp">Request a Copy (via US Mail)</a></li>
+      </ul>
+    </div>
   </div>
 
+  <ul class="otherCatalogs">
+  <h2>View Other Catalogs</h2>
+    <li><a href="http://catalog.truefabrications.com/pdf/viewer/?file=../ValentinesDay2015.pdf">
+      <img src="http://www.truefabrications.com/catalog/VDay2015_WebCover.jpg" />
+      <p>Valentine 2015</p>
+    </a></li>
+    <li><a href="http://catalog.truefabrications.com/pdf/viewer/?file=../TrueBrewNew.pdf">
+      <img src="http://www.truefabrications.com/catalog/brewery.jpg" />
+      <p>Beer Accessories</p>
+    </a></li>
+    <li><a href="http://catalog.truefabrications.com/pdf/viewer/?file=../customization_2014.pdf">
+      <img src="http://www.truefabrications.com/images/customization_guide_icon.gif" style="margin-left: 10px;" />
+      <p>Customization Guide</p>
+    </a></li>
+    <li><a href="http://catalog.truefabrications.com/pdf/viewer/?file=../Wine_Spirit_2014.pdf">
+      <img src="http://www.truefabrications.com/catalog/wss2014.jpg" />
+      <p>Wine & Spirit</p>
+    </a></li>
+    <li><a href="http://catalog.truefabrications.com/pdf/viewer/?file=../holiday2014.pdf">
+      <img src="http://www.truefabrications.com/catalog/holidayleaflet.jpg" />
+      <p>Holiday Leaflet</p>
+    </a></li>
+    <li><a href="http://catalog.truefabrications.com/pdf/viewer/?file=../PackageDeal2014.pdf">
+      <img src="http://www.truefabrications.com/catalog/PACKAGE_DEALS_webcover.jpg" />
+      <p>Package Deals</p>
+    </a></li>
+  </ul>
 
 </section>
 </div>
