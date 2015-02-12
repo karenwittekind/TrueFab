@@ -1,37 +1,78 @@
+/* ~~~Links~~~ */
+
+/* unvisited link */
+a:link {
+    color: #B0BC22;
+    text-decoration: none;
+}
+
+/* visited link */
+a:visited {
+    color: #B0BC22;
+    text-decoration: none;
+}
+
+/* mouse over link */
+a:hover {
+    color: #c4d333;
+    text-decoration: none;
+}
+
+/* selected link */
+a:active {
+    color: #B0BC22;
+    text-decoration: none;
+}
+
+/* body text */
+
 .tfBodyText {
   font-family: 'Montserrat', sans-serif;
-    margin-left: 20px;
-    margin-right: 20px;
+    margin-left: 0px;
+    margin-right: 0px;
 }
 
+/* page titles */
 .tfBodyText h2{
   font-family: 'Montserrat', sans-serif;  
-  margin-top: 1em;
   margin-bottom: 1em;
 }
 
+/* main headings */
 .tfBodyText h3{
-  font-size: 1.75em;
-  font-family: 'Montserrat', sans-serif;
-  color: #b0bc22;
-  font-weight: bold;
-  margin-top: 1em;
-  margin-bottom: .25em;
-}
-
-.tfBodyText h4{
   font-size: 1.5em;
   font-family: 'Montserrat', sans-serif;
+  color: #b0bc22;
+  font-weight: normal;
+  line-height: 30px;
   margin-top: 1em;
   margin-bottom: 1em;
 }
 
-.tfBodyText h5{
-  font-size: 1em;
-  font-family: sans-serif;
-  font-style: italic;
+/* sub-headings */
+.tfBodyText h4{
+  font-size: 1.25em;
+  font-family: 'Montserrat', sans-serif;
   margin-top: 1em;
   margin-bottom: 1em;
+}
+
+/* tbd */
+.tfBodyText h5{
+  font-size: 1em;
+  font-family: 'Montserrat', sans-serif;
+  margin-top: 1em;
+  margin-bottom: 1em;
+}
+
+/* alternate sub-headings */
+.tfBodyText h6{
+  font-size: 1.25em;
+  font-family: 'Montserrat', sans-serif;
+  color: #b0bc22;
+  font-weight: normal;
+  margin-top: 1em;
+  margin-bottom: .25em;
 }
 
 .tfBodyText ul{
@@ -49,23 +90,42 @@
   font-family: sans-serif;
 }
 
-/* unvisited link */
-a:link {
-    color: #B0BC22;
+.aboutHeader {
+  text-align: center;
+  width: 100%; 
+  margin: auto; 
+  margin-bottom: 2em;
 }
 
-/* visited link */
-a:visited {
-    color: #B0BC22;
+.aboutHeader li {
+  list-style-type: none;
+  display: inline;
+  margin-left: auto;
+  margin-right: auto;
+  font-family: 'Montserrat', sans-serif;
 }
 
-/* mouse over link */
-a:hover {
-    color: #c4d333;
-    text-decoration: none;
+.tfThreePanelsContainer {
+  display: inline-block;
+  text-align: justify;
+  width: 100%;
 }
 
-/* selected link */
-a:active {
-    color: #B0BC22;
+.tfThreePanels{
+  position: relative; 
+  display: inline-block; 
+  width: 32%; 
+  vertical-align: top;
+  margin: 0px auto;
+}
+
+.stretch {
+  width: 100%;
+  display: inline-block;
+  font-size: 0;
+  line-height: 0
+}
+
+.tfThreePanels img {
+  width: 100%;
 }
