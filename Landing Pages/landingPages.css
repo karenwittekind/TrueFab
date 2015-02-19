@@ -237,34 +237,6 @@ a:active {
   }
 
 
-
-@media screen and (max-width: 760px) {
-    .tfBodyText{
-      width: auto;
-      margin-top: -40px;
-    }
-
-      #sidebar {
-    width: 100%;
-    display: inline-block;
-    text-align: left;
-    position: relative;
-  }
-
-  #sidebar li {
-    margin-bottom: 0px;
-    border-bottom: 1px solid #777777;
-    width: 102%;
-    margin-left: -20px;
-    padding-left: 20px;
-  }
-
-}
-
-
-
-
-
 /* ----Individual Pages----- */
 
 #hostpage {
@@ -348,6 +320,42 @@ a:active {
   #shipping {
     width: auto;
     margin-left: 0px;
+  }
+
+  .tfBodyText{
+    width: auto;
+    margin-top: -40px;
+  }
+
+    #sidebar {
+  width: 100%;
+  display: inline-block;
+  text-align: left;
+  position: relative;
+  }
+
+  #sidebar li {
+    margin-bottom: 0px;
+    border-bottom: 1px solid #777777;
+    width: 102%;
+    margin-left: -20px;
+    padding-left: 20px;
+  }
+
+
+  .tfTwoPanels{
+    width: 100%;
+    display: block;
+  }
+
+  .tfThreePanels{
+    width: 100%;
+    display: block;
+  }
+
+  .tfFourPanels{
+    width: 100%;
+    display: block;
   }
 
 }
