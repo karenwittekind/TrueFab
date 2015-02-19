@@ -1,3 +1,20 @@
+/* ---
+
+   _                  
+ _| |_ _ __ _   _  ___ ®
+|_   _| '__| | | |/ _ \
+  | |_| |  | |_| |  __/
+   \__|_|   \__,_|\___|
+
+F A B R I C A T I O N S                
+
+
+--- */
+
+
+
+@import url(http://fonts.googleapis.com/css?family=Nunito:300);
+
 /* ~~~Links~~~ */
 
 /* unvisited link */
@@ -87,7 +104,7 @@ a:active {
   font-size: 1em;
   margin-top: 1em;
   margin-bottom: 1em;
-  font-family: sans-serif;
+  font-family: 'Nunito', sans-serif;
 }
 
 .aboutHeader {
@@ -95,6 +112,18 @@ a:active {
   width: 100%; 
   margin: auto; 
   margin-bottom: 2em;
+}
+
+.aboutHeader h2 {
+  margin-bottom: 0px;
+}
+
+.aboutHeader h2 a {
+  color: #666666;
+}
+
+.aboutHeader nav {
+  margin: 2em auto;
 }
 
 .aboutHeader li {
@@ -105,27 +134,221 @@ a:active {
   font-family: 'Montserrat', sans-serif;
 }
 
-.tfThreePanelsContainer {
+/* ~~~ Panels ~~~ */
+
+.tfPanelsContainer {
   display: inline-block;
   text-align: justify;
   width: 100%;
 }
 
-.tfThreePanels{
+.tfTwoPanels{
   position: relative; 
   display: inline-block; 
-  width: 32%; 
+  width: 46%; 
   vertical-align: top;
   margin: 0px auto;
+}
+
+.tfTwoPanels p {
+  text-align: left;
+}
+
+.tfThreePanels{
+  position: relative; 
+  display: inline-block;
+  width: 31%; 
+  vertical-align: top;
+  margin: 0px auto;
+  text-align: center;
 }
 
 .stretch {
   width: 100%;
   display: inline-block;
   font-size: 0;
-  line-height: 0
+  line-height: 0;
 }
 
 .tfThreePanels img {
   width: 100%;
 }
+
+
+
+.tfFourPanels{
+  vertical-align: top;
+  width: 24%;
+  min-width: 150px;
+  display: inline-block;
+  text-align: center;
+}
+
+.brandBody {
+  display: inline-block;
+  text-align: center;
+}
+
+.brandLogo {
+  margin: 20px auto;
+}
+
+.brandLogo img {
+  width: 10%;
+}
+
+.contactButton {
+  margin-top: 5px;
+  -webkit-border-radius: 44;
+  -moz-border-radius: 44;
+  border-radius: 7px;
+  font-family: 'Montserrat', sans-serif;
+  color: #ffffff;
+  font-size: 20px;
+  background: #B0BC22;
+  padding: 15px 20px 15px 20px;
+  text-decoration: none;
+  border-width: 0px;
+}
+
+.contactButton:hover {
+  background: #c4d333;
+  text-decoration: none;
+}
+
+#sidebar
+{
+  float: left;
+  width: 200px;
+  position: fixed;
+  min-height: 100%;
+}
+
+  #sidebar ul {
+    list-style-type: none;
+    margin-left: 0px;
+  }
+
+  #sidebar li {
+    font-family: Montserrat, sans-serif; 
+    font-size: 1.1em; 
+    line-height: 2em;
+    font-weight: 100;
+  }
+
+
+
+@media screen and (max-width: 760px) {
+    .tfBodyText{
+      width: auto;
+      margin-top: -40px;
+    }
+
+      #sidebar {
+    width: 100%;
+    display: inline-block;
+    text-align: left;
+    position: relative;
+  }
+
+  #sidebar li {
+    margin-bottom: 0px;
+    border-bottom: 1px solid #777777;
+    width: 102%;
+    margin-left: -20px;
+    padding-left: 20px;
+  }
+
+}
+
+
+
+
+
+/* ----Individual Pages----- */
+
+#hostpage {
+  font-family: 'Montserrat', sans-serif;
+  text-align: center;
+
+}
+
+  #hostpage h1 {
+    font-size: 4em;
+    color: #b0bc22;
+    margin-top: 1em;
+  }
+
+  #hostpage h2 {
+    font-size: 1.5em;
+    color: #b0bc22;
+  }
+
+  #hostpage h3 {
+    font-size: 1.5em;
+    color: #666666;
+  }
+
+  #hostpage p {
+    color: #666666;
+  }
+
+  #hostpage img {
+    width: 100%;
+  }
+
+
+
+#faq{
+   max-width: 600px;
+   float: left; 
+   margin-left: 240px;
+}
+
+#faq h5{
+  font-family: 'Roboto Condensed', sans-serif;
+  font-size: 1.75em;
+  font-weight: 300;
+  line-height: 4em;
+  letter-spacing: 1px;
+  color: #b0bc22;
+}
+
+
+
+#shipping {
+  max-width: 600px; float: left; margin-left: 240px;
+}
+
+
+
+
+#returns {
+  max-width: 800px; float: left; margin-left: 240px;
+}
+
+
+
+
+
+/* --- Mobile Optimize --- */
+
+@media screen and (max-width: 760px) {
+
+  #faq {
+    width: auto;
+    margin-left: 0px;
+  }
+
+  #returns {
+    width: auto;
+    margin-left: 0px;
+  }
+
+  #shipping {
+    width: auto;
+    margin-left: 0px;
+  }
+
+}
+

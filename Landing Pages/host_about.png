@@ -1,0 +1,39 @@
+<head>
+<link rel="stylesheet" href="/assets/tf-styles/landingPages.css"></link>
+
+
+<link href='http://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet' type='text/css'>
+
+<style type="text/css">
+	
+
+
+</style>
+
+</head>
+
+<body>
+<div class="tfBodyText">
+<section id="hostpage">
+
+<img src="/assets/images/content/CD_pages/HostTeam.png" />
+
+<h1>Our Process Includes</h1>
+<h2>And Not in This Order</h2>
+<img src="/assets/images/content/CD_pages/host_about_icons.png" />
+
+<div class="tfPanelsContainer">
+  <div class="tfTwoPanels" style="margin-right:6%;">
+    <h3>Our Mission</h3>
+    <p>HOST&reg;, and internationally recognized brand, is wholly committed to designing functionally beautiful products that enhance your drinking experience.  Our brilliant in-house team of industrial designers and engineers develop each product with artful precision and produce only what we ourselves would love and use in our own homes.  We work hard to bring only the best, most compelling items to the world.  We hope you enjoy using them as much as we do.</p>
+  </div>
+  <div class="tfTwoPanels">
+    <h3>Our Philosophy</h3>
+    <p>With HOST&reg; products, there's more than meets the eye.  You know you're getting something great.  Every material is carefully selected and every surface carefully mapped so that each product is a work of functional art, ready to be used and showcased in your kitchen.  The technical attention breathed into our award-winning colletion is unparalleled in the wine industry.  We take great pride in knowing that we deliver groundbreaking visions to you from start to finish.</p>
+  </div>
+  <span class="stretch"></span>
+</div>
+
+</section>
+</div>
+</body>
