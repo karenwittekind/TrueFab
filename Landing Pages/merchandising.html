@@ -1,7 +1,6 @@
 <head>
 
-/* ---
-
+<!-- 
    _                  
  _| |_ _ __ _   _  ___ ®
 |_   _| '__| | | |/ _ \
@@ -10,8 +9,7 @@
 
 F A B R I C A T I O N S                
 
-
---- */
+ -->
 
 <link rel="stylesheet" href="/assets/tf-styles/landingPages.css"></link>
 
@@ -24,47 +22,36 @@ F A B R I C A T I O N S
 .tfPanelsContainer
 {
   text-size: 1em;
+	margin-top: 10px; 
+	padding-top: 20px; 
+	padding-bottom: 10px;
 }
 
-.tfThreePanels img:hover{
-  opacity: 0.85;
-  filter: alpha(opacity=85);
-  -o-transition: all 0.2s ease;
-  -moz-transition: all 0.2s ease;
-  -webkit-transition: all 0.2s ease;
+.tfThreePanels {
+  background-color: #f8f8f8;
+  padding: 2%;
+  width: 28%
 }
 
-.btn-shop {
-color: #fff !important;
-display: inline-block;
-position: relative;
-border: none;
-font-family: 'Nunito', "Helvetica Neue",Arial,Helvetica,sans-serif;
-font-size: 16px;
-line-height: 1.6875;
-font-weight: bold;
-text-align: center;
-letter-spacing: .02em;
-text-decoration: none;
-padding: 0.57143em 1.42857em;
-max-width: 100%;
--webkit-font-smoothing: antialiased;
--webkit-border-radius: 4px 4px 4px 4px;
--moz-border-radius: 4px 4px 4px 4px;
-border-radius: 4px 4px 4px 4px;
--o-transition: all 0.2s ease;
--moz-transition: all 0.2s ease;
--webkit-transition: all 0.2s ease;
-transition: all 0.2s ease;
-background: #B7B7B7;
-}
-.btn-shop:hover {
-  opacity: 0.85;
-  filter: alpha(opacity=85);
-  -o-transition: all 0.2s ease;
-  -moz-transition: all 0.2s ease;
-  -webkit-transition: all 0.2s ease;
+  .tfThreePanels img:hover{
+    opacity: 0.85;
+    filter: alpha(opacity=85);
+    -o-transition: all 0.2s ease;
+    -moz-transition: all 0.2s ease;
+    -webkit-transition: all 0.2s ease;
+  }
 
+@media screen and (max-width: 760px){
+
+  #Merchandising h2 {
+    margin-top: 5%;
+  }
+
+  .tfThreePanels{
+    background: transparent;
+    padding:2% 0;
+    width: 100%;
+  }
 }
 
 </style>
@@ -72,7 +59,6 @@ background: #B7B7B7;
 <body>
 <div class="tfBodyText">
 <section id="Merchandising">
-
 <h2 style="text-align: center">Merchandising With True Fabrications</h2>
 <div style="width: 80%; min-width: 300px; margin: auto;">
 <p style="text-align: center">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
@@ -83,35 +69,27 @@ cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
 proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
 </p>
 </div>
-<div class="tfPanelsContainer" style="margin-top: 10px; padding-top: 20px; padding-bottom: 10px;">
-  <div style="width: 100%; margin: 0 auto;">
-	<div class="tfThreePanels" style="background-color: #f8f8f8;">
-  <div style="width: 90%; margin: 0 auto; margin-top: 5%; margin-bottom: 5%;">  
+<div class="tfPanelsContainer">
+	<div class="tfThreePanels">
     <a href="/Merchandising/Counter-Top-Displays"><img src="/assets/images/content/CD_pages/true_merchandising_counterdisplay.png" /></a>
     <h4>Counter Displays</h4>
     <p>American Apparel literally quinoa wolf, lomo PBR&B 90's fanny pack Portland mustache. VHS polaroid narwhal direct trade. Literally leggings asymmetrical sartorial tote bag. Pickled Thundercats authentic farm-to-table before they sold out.</p>
-    <a aria-label="Shop Counter Displays" class="btn-shop" href="/Merchandising/Counter-Top-Displays" role="button" style="background: #92D9F8;">Shop Counter Displays</a>
-    </div>
+    <a href="/Merchandising/Counter-Top-Displays"><button class="truefabButton1" style="background: #92D9F8;">Shop Counter Displays</button></a>
 	</div>
-  <div class="tfThreePanels" style="background-color: #f8f8f8; margin-left: 2%, margin-right: 2%;">
-    <div style="width: 90%; margin: 0 auto; margin-top: 5%; margin-bottom: 5%;">
+  <div class="tfThreePanels">
     <a href="/Merchandising/Floor-Displays"><img src="/assets/images/content/CD_pages/true_merchandising_floordisplay.png" /></a>
     <h4>Floor Displays</h4>
     <p>American Apparel literally quinoa wolf, lomo PBR&B 90's fanny pack Portland mustache. VHS polaroid narwhal direct trade. Literally leggings asymmetrical sartorial tote bag. Pickled Thundercats authentic farm-to-table before they sold out.</p>
-    <a aria-label="Shop Counter Displays" class="btn-shop" href="/Merchandising/Floor-Displays" role="button" style="background: #28c0d7;">Shop Floor Displays</a>
+    <a href="/Merchandising/Floor-Displays"><button class="truefabButton1" style="background: #28c0d7;">Shop Floor Displays</button></a>
   </div>
-  </div>
-  <div class="tfThreePanels" style="background-color: #f8f8f8;">
-    <div style="width: 90%; margin: 0 auto; margin-top: 5%; margin-bottom: 5%;">  
+  <div class="tfThreePanels">
     <a href="/Merchandising/Aisle-Displays"><img src="/assets/images/content/CD_pages/true_merchandising_aisledisplay.png" /></a>
     <h4>Aisle Displays</h4>
     <p>American Apparel literally quinoa wolf, lomo PBR&B 90's fanny pack Portland mustache. VHS polaroid narwhal direct trade. Literally leggings asymmetrical sartorial tote bag. Pickled Thundercats authentic farm-to-table before they sold out.</p>
-    <a aria-label="Shop Counter Displays" class="btn-shop" href="/Merchandising/Aisle-Displays" role="button" style="background: #b8cd32;">Shop Aisle Displays</a>
-  </div>
+    <a href="/Merchandising/Aisle-Displays"> <button class="truefabButton1" style="background: #b8cd32;">Shop Aisle Displays</button></a>
   </div>
     <span class="stretch"></span>
   </div>
-</div>
 </section>
 </div>
 </body>

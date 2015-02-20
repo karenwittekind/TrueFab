@@ -1,5 +1,14 @@
 <head>
+<!-- 
+   _                  
+ _| |_ _ __ _   _  ___ ®
+|_   _| '__| | | |/ _ \
+  | |_| |  | |_| |  __/
+   \__|_|   \__,_|\___|
 
+F A B R I C A T I O N S                
+
+ -->
 <link rel="stylesheet" href="/assets/tf-styles/landingPages.css"></link>
 
 
@@ -42,33 +51,36 @@
       width: 300px;
     }
 
-    .tfFooterPanels{
+    .tfPanelsContainer{
       width: 100%;
       text-align: justify;
       display: inline-block;
-      height: 100%;
       vertical-align: top;
     }
 
-    .tfFooterPanels h1 {
+    .tfPanelsContainer h1 {
       font-family: Montserrat, sans-serif;
-      font-size: 6.5em;
+      font-size: 4em;
       line-height: 1em;
     }
 
-    @media screen and (max-width: 1900px) {
-      .tfFooterPanels h1 {
+    @media screen and (max-width: 1600px) {
+      .tfPanelsContainer h1 {
           font-size: 3vw;
+      }
+
+      .tfPanelsContainer p {
+        font-size: 1.5em;
       }
 }
 
-    .tfFooterPanels img {
+    .tfPanelsContainer img {
       width: 20%;
       margin-left: auto;
       margin-right: auto;
     }
 
-    .tfFooterPanels p {
+    .tfPanelsContainer p {
       font-size: 1vw;
       text-align: center;
     }
@@ -77,8 +89,15 @@
       background-color: #f2f2f2; 
       padding-top: 50px;
       padding-bottom: 50px;
-      width: 30%;
       text-align: center;
+    }
+
+
+    @media screen and (max-width: 760px){
+      .tfThreePanels{
+        padding:0px;
+        background:transparent;
+      }
     }
 
     </style>
@@ -130,33 +149,33 @@
 <h3>Customer Service</h3>
 <p>Want to track your order? We’ll make it happen. Confused about something? We’ll figure it out. Need a problem resolved? We’ll find a way to fix it.</p>
 
-<div class="tfFooterPanels">
+<div class="tfPanelsContainer">
   <div class="tfThreePanels">
     <h1>Email<br />Support</h1>
     <p>We will reply <br />as soon as possible<br /></p>
     <img style="margin: 8.5px 0;" src="/assets/images/content/CD_pages/email_icon.png" />
     <br />
-    <button class="contactButton">
+    <a href="mailto:consumer@truefabrications.com"><button class="truefabButton1">
       Submit Case
-    </button>
+    </button></a>
   </div>
-  <div class="tfThreePanels" style="margin-left: 2%; margin-right: 2%;">
+  <div class="tfThreePanels">
     <h1>Chat<br />Support</h1>
     <p>Monday - Friday <br /> 8:00AM - 5:00PM PST</p>
     <img src="/assets/images/content/CD_pages/chat-icon.png" />
     <br />
-    <button class="contactButton">
+    <a href="#" onclick="window.open('http://a3.websitealive.com/1297/rRouter.asp?groupid=1297&amp;websiteid=0&amp;departmentid=1581&amp;dl='+escape(document.location.href),'','width=400,height=400'); return false;"><button class="truefabButton1">
       Start Chat!
-    </button>
+    </button></a>
   </div>
   <div class="tfThreePanels">
     <h1>Phone<br />Support</h1>
     <p>Monday - Friday <br /> 8:00AM - 5:00PM PST</p>
     <img src="/assets/images/content/CD_pages/phone-icon.png" />
     <br />
-    <button class="contactButton">
+    <a href="tel://800-750-8783"><button class="truefabButton1">
       800-750-8783
-    </button>
+    </button></a>
   </div>
   <span class="stretch"></span>
 </div>
