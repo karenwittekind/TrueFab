@@ -107,32 +107,7 @@ a:active {
   font-family: 'Nunito', sans-serif;
 }
 
-.aboutHeader {
-  text-align: center;
-  width: 100%; 
-  margin: auto; 
-  margin-bottom: 2em;
-}
 
-.aboutHeader h2 {
-  margin-bottom: 0px;
-}
-
-.aboutHeader h2 a {
-  color: #666666;
-}
-
-.aboutHeader nav {
-  margin: 2em auto;
-}
-
-.aboutHeader li {
-  list-style-type: none;
-  display: inline;
-  margin-left: auto;
-  margin-right: auto;
-  font-family: 'Montserrat', sans-serif;
-}
 
 /* ~~~ Panels ~~~ */
 
@@ -250,7 +225,6 @@ background: #B7B7B7;
     font-weight: 100;
   }
 
-
 /* ----Individual Pages----- */
 
 #hostpage {
@@ -306,10 +280,18 @@ background: #B7B7B7;
   max-width: 600px; float: left; margin-left: 240px;
 }
 
-
+#who h3{
+  color: #666666;
+  text-align: :left;
+  font-size: 1.5em;
+}
 
 
 #returns {
+  max-width: 800px; float: left; margin-left: 240px;
+}
+
+#about {
   max-width: 800px; float: left; margin-left: 240px;
 }
 
@@ -363,7 +345,7 @@ background: #B7B7B7;
     padding:0;
   }
 
-  .tfTwoPanels h1, .tfTwoPanels h2, .tfTwoPanels h3, .tfTwoPanels h4, .tfTwoPanels p, .tfTwoPanels img {
+  .mobileDisappear h1, .mobileDisappear h2, .mobileDisappear h3, .mobileDisappear h4, .mobileDisappear p, .mobileDisappear img {
     position: fixed;
     left: -9999px;
     color: red;
@@ -376,23 +358,11 @@ background: #B7B7B7;
     padding:0;
   }
 
-  .tfThreePanels h1, .tfThreePanels h2, .tfThreePanels h3, .tfThreePanels h4, .tfThreePanels p, .tfThreePanels img {
-    position: fixed;
-    left: -9999px;
-    color: red;
-  }
-
   .tfFourPanels{
     width: 100%;
     display: block;
     background: transparent;
     padding:0;
-  }
-
-  .tfFourPanels h1, .tfFourPanels h2, .tfFourPanels h3, .tfFourPanels h4, .tfFourPanels p, .tfFourPanels img {
-    position: fixed;
-    left: -9999px;
-    color: red;
   }
 
   .truefabButton1{
