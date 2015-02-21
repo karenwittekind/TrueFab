@@ -3,39 +3,48 @@
 
 
 <link href='http://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet' type='text/css'>
-
+<script src="http://bigspotteddog.github.io/ScrollToFixed/jquery-scrolltofixed-min.js"></script>
 
 </head>
 
 <body>
-
+<div class="tfBodyText">
 <!-- Sidebar -->
-  <nav id="sidebar">
+  <nav class="sidebar">
+  	<h5>About Us</h5>
+    <ul>
+      <a href="/about"><li>Our Company</li></a>
+      <a href="/about"><li>Our Brands</li></a>
+      <a href="/about"><li>Our Guarantees</li></a>   
+    </ul>
+    <h5>Help & Info</h5>
     <ul>
       <a href="/faq"><li>FAQ</li></a>
       <a href="/shipping"><li>Shipping & Deliveries</li></a>
       <a href="/returns"><li>Returns & Exchanges</li></a>
-      <a href="/about"><li>Who We Are</li></a>
     </ul>
   </nav>
 <!-- End Sidebar -->
 
-<section id="about">
-<div style="width: 50%; min-width: 300px; margin: auto;">
-<h3 style="font-size: 1.5em; text-align: center; color: #666666;"><span style="margin-bottom:0px;">Welcome to True</h3>
+<section id="who">
+<h3><span style="margin-bottom:0px;">Welcome to True</h3>
 <p style="text-align: justify;">Since 2015 True Fabrications is the leading designer and supplier of beverage lifestyle accessories worldwide. From our headquarters in Seattle, Washington we offer the very best on-trend products and branding at the best prices on the market. Our company is anchored by an innovative, future-driven product development team, cutting-edge in-house design and customization departments, sales representatives specialized in everything from national grocery chains to family-owned wineries, and the finest customer service team in the industry. </p>
 <p style="text-align: justify;">To top it all off, everything we do is backed by our <B>100% Satisfaction Guarantee</B>. We hope you’ll become one of our thousands of loyal customers, and we look forward to building a thriving, long-lasting relationship with you and your business.
 </p>
-<h3 style="font-size: 1.5em; text-align: center; color: #666666;">Our Mission</h3>
+<h3>Our Mission</h3>
 <p style="text-align: justify;">Since 2015 True Fabrications is the leading designer and supplier of beverage lifestyle accessories worldwide. From our headquarters in Seattle, Washington we offer the very best on-trend products and branding at the best prices on the market. Our company is anchored by an innovative, future-driven product development team, cutting-edge in-house design and customization departments, sales representatives specialized in everything from national grocery chains to family-owned wineries, and the finest customer service team in the industry. </p>
-</div>
 
+<img src="/assets/images/content/CD_pages/true_truecrew.jpg" />
 
 </section>
 </div>
-
+<span class="bodyEnd"></span>
 <!-- End Body Section -->
-
-
-<img src="http://twine.tf.production.na1.netsuitestaging.com/assets/images/content/banners/True_banner_AboutUs.jpg"></img>
+<script>
+$(document).ready(function() {
+  $('.sidebar').scrollToFixed({
+  	limit: $('.bodyEnd').offset().top
+  });
+});
+</script>
 </body>

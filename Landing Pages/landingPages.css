@@ -12,8 +12,13 @@ F A B R I C A T I O N S
 --- */
 
 
+/* ~~~Google Fonts~~~ */
 
 @import url(http://fonts.googleapis.com/css?family=Nunito:300);
+@import url(http://fonts.googleapis.com/css?family=Source+Sans+Pro);
+@import url(http://fonts.googleapis.com/css?family=Lato);
+@import url(http://fonts.googleapis.com/css?family=Roboto+Condensed);
+@import url(http://fonts.googleapis.com/css?family=Roboto);
 
 /* ~~~Links~~~ */
 
@@ -104,7 +109,7 @@ a:active {
   font-size: 1em;
   margin-top: 1em;
   margin-bottom: 1em;
-  font-family: 'Nunito', sans-serif;
+  font-family: 'Avenir', 'Arial', sans-serif;
 }
 
 
@@ -205,21 +210,31 @@ background: #B7B7B7;
 
 }
 
-#sidebar
+.sidebar
 {
   float: left;
   width: 200px;
   position: fixed;
-  min-height: 100%;
 }
 
-  #sidebar ul {
+  .sidebar ul {
     list-style-type: none;
     margin-left: 0px;
   }
 
-  #sidebar li {
-    font-family: Montserrat, sans-serif; 
+  .sidebar li {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    font-size: 1em; 
+    line-height: 1.75em;
+    font-weight: 100;
+  }
+
+  .sidebar h5 {
+    font-family: 'Roboto Condensed', Montserrat, sans-serif;
+    letter-spacing: .03em;
+    text-transform: uppercase;
+    font-weight: 300;
     font-size: 1.1em; 
     line-height: 2em;
     font-weight: 100;
@@ -280,6 +295,10 @@ background: #B7B7B7;
   max-width: 600px; float: left; margin-left: 240px;
 }
 
+#guarantee {
+  max-width: 800px; float: left; margin-left: 240px;
+}
+
 #who h3{
   color: #666666;
   text-align: :left;
@@ -291,7 +310,7 @@ background: #B7B7B7;
   max-width: 800px; float: left; margin-left: 240px;
 }
 
-#about {
+#who {
   max-width: 800px; float: left; margin-left: 240px;
 }
 
@@ -304,6 +323,11 @@ background: #B7B7B7;
 @media screen and (max-width: 760px) {
 
   #faq {
+    width: auto;
+    margin-left: 0px;
+  }
+
+  #who {
     width: auto;
     margin-left: 0px;
   }
@@ -323,14 +347,14 @@ background: #B7B7B7;
     margin-top: -40px;
   }
 
-    #sidebar {
+    .sidebar {
   width: 100%;
   display: inline-block;
   text-align: left;
   position: relative;
   }
 
-  #sidebar li {
+  .sidebar li {
     margin-bottom: 0px;
     border-bottom: 1px solid #ccc;
     width: 102%;
