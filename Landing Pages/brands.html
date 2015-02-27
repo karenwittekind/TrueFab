@@ -7,10 +7,17 @@
 <style type="text/css">
 
 .tfFourPanels img{
-  width: 100%;
+  width: 70%;
+  vertical-align: : bottom;
 }
 
+.tfPanelsContainer {
+  vertical-align: bottom;
+}
 
+.tfFourPanels {
+  vertical-align: bottom;
+}
 
 </style>
 
@@ -18,33 +25,40 @@
 </head>
 <body>
 <div class="tfBodyText">
-<section id="brands">
 
-<!-- About Header -->
-<div class="aboutHeader">
-  <h2 style="text-align: center;"><a href="/about">About True Fabrications</a></h2>
-  <nav>
+<!-- Sidebar -->
+  <nav class="sidebar">
+    <h5>About Us</h5>
     <ul>
-    <a href="/who" style="color:#BBBBBB;"><li class="whoLink">WHO WE ARE</li></a><a href="/guarantee" style="color:#BBBBBB;"><li class="guaranteeLink" style="margin-left: 10%; margin-right: 10%;">OUR GUARANTEES</li></a><a href="/about-brands"><li class="brandsLink">OUR BRANDS</li></a>
+      <a href="/who"><li>Our Company</li></a>
+      <a style="color: #B0BC22;" href="/about-brands"><li style="font-size: 1em; font-weight: 500; letter-spacing: .05em">Our Brands</li></a>
+      <a href="/guarantee"><li>Our Guarantees</li></a>   
+    </ul>
+    <h5>Help & Info</h5>
+    <ul>
+      <a href="/faq"><li>FAQ</li></a>
+      <a href="/shipping"><li>Shipping & Deliveries</li></a>
+      <a href="/returns"><li>Returns & Exchanges</li></a>
     </ul>
   </nav>
-</div>
-<!-- End Header -->
+<!-- End Sidebar -->
+
+<section id="brands">
 
 
 <div class="tfPanelsContainer">
-	<div class="tfFourPanels">
-    	<a href="/about-brands-true"><img src="/assets/images/content/CD_pages/true_who_1.png" /></a>
-	</div>
-	<div class="tfFourPanels">
-    	<a href="/about-brands-host"><img src="/assets/images/content/CD_pages/true_who_2.png" /></a>
-	</div>
-	<div class="tfFourPanels">
-    	<a href="/about-brands-twine"><img src="/assets/images/content/CD_pages/true_who_3.png" /></a>
-	</div>
-	<div class="tfFourPanels">
-    	<a href="/about-brands-viski"><img src="/assets/images/content/CD_pages/true_who_1.png" /></a>
-	</div>
+  <div class="tfFourPanels">
+    <a href="/about-brands-true"><img src="/assets/images/content/CD_pages/true_brandlogo_true.png"  style="width: 60%;"/></a>
+  </div>
+  <div class="tfFourPanels">
+    <a href="/about-brands-host"><img src="/assets/images/content/CD_pages/true_brandlogo_host.png" /></a>
+  </div>
+  <div class="tfFourPanels">
+    <a href="/about-brands-twine"><img src="/assets/images/content/CD_pages/true_brandlogo_twine.png" /></a>
+  </div>
+  <div class="tfFourPanels">
+    <a href="/about-brands-viski"><img src="/assets/images/content/CD_pages/true_brandlogo_viski.png" style="width: 40%;"/></a>
+  </div>
   <span class="stretch"></span>
 </div>
 </section>
