@@ -1,7 +1,6 @@
 <head>
-<title>True Fabrications | F.A.Q.</title>
 <link rel="stylesheet" href="/assets/tf-styles/landingPages.css"></link>
-
+<script src="/assets/js/jquery-scrolltofixed-min.js"></script>
 <link href='http://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet' type='text/css'>
 <link href='http://fonts.googleapis.com/css?family=Oswald' rel='stylesheet' type='text/css'>
 
@@ -16,16 +15,22 @@
 <body>
 <div class="tfBodyText">
 <!-- Sidebar -->
-  <nav class="sidebar">
+  <nav class="sidebar" style="position:relative;">
     <h5>About Us</h5>
     <ul>
       <a href="/who"><li>Our Company</li></a>
-      <a href="/about-brands"><li>Our Brands</li></a>
+      <a href="/about-brands"><li class="expandingNav">Our Brands</a>
+        <ul class="tfHidden" style="margin-left:15px;">
+          <a href="/about-brands-viski"><li>Viski</li></a>
+          <a href="/about-brands-viski"><li>True</li></a>
+          <a href="/about-brands-viski"><li>Host</li></a>
+        </ul>
+      </li>
       <a href="/guarantee"><li>Our Guarantees</li></a>   
     </ul>
     <h5>Help & Info</h5>
     <ul>
-      <a style="color: #B0BC22;" href="/faq"><li style="font-size: 1em; font-weight: 500; letter-spacing: .05em">FAQ</li></a>
+      <a href="/faq"><li>FAQ</li></a>
       <a href="/shipping"><li>Shipping & Deliveries</li></a>
       <a href="/returns"><li>Returns & Exchanges</li></a>
     </ul>
@@ -110,4 +115,27 @@
   <p>We enforce MAP in order to protect our prices and vendors.  If you're interested in selling online, just give us a call!</p>
 </section>
 </div>
+<div class="bodyEnd">&nbsp;</div>
+<!-- End Body Section -->
+<script>
+var $ = jQuery;
+
+var tfMain = function() {
+
+
+  $('.sidebar').scrollToFixed({
+    limit: $('.bodyEnd').offset().top,
+    minWidth: 760
+  });
+
+
+};
+
+$('.expandingNav').click(function(){
+  $(this).children('.tfHidden').slideDown();
+  });
+
+$(document).ready(tfMain);
+
+</script>
 </body>

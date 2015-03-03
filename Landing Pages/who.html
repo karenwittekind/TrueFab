@@ -1,7 +1,7 @@
 <head>
 <link rel="stylesheet" href="/assets/tf-styles/landingPages.css"></link>
 
-
+<script src="/assets/js/jquery-scrolltofixed-min.js"></script>
 <link href='http://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet' type='text/css'>
 
 
@@ -10,11 +10,17 @@
 <body>
 <div class="tfBodyText">
 <!-- Sidebar -->
-  <nav class="sidebar">
+  <nav class="sidebar" style="position:relative;">
     <h5>About Us</h5>
     <ul>
-      <a style="color: #B0BC22;" href="/who"><li style="font-size: 1em; font-weight: 500; letter-spacing: .05em">Our Company</li></a>
-      <a href="/about-brands"><li>Our Brands</li></a>
+      <a href="/about"><li>Our Company</li></a>
+      <a href="/about-brands"><li class="expandingNav">Our Brands</a>
+        <ul class="tfHidden" style="margin-left:15px;">
+          <a href="/about-brands-viski"><li>Viski</li></a>
+          <a href="/about-brands-viski"><li>True</li></a>
+          <a href="/about-brands-viski"><li>Host</li></a>
+        </ul>
+      </li>
       <a href="/guarantee"><li>Our Guarantees</li></a>   
     </ul>
     <h5>Help & Info</h5>
@@ -27,7 +33,7 @@
 <!-- End Sidebar -->
 
 <section id="who">
-<h3><span style="margin-bottom:0px;">Welcome to True</h3>
+<h3><span style="margin-bottom:0px;">Our Company</h3>
 <p style="text-align: justify;">Since 2015 True Fabrications is the leading designer and supplier of beverage lifestyle accessories worldwide. From our headquarters in Seattle, Washington we offer the very best on-trend products and branding at the best prices on the market. Our company is anchored by an innovative, future-driven product development team, cutting-edge in-house design and customization departments, sales representatives specialized in everything from national grocery chains to family-owned wineries, and the finest customer service team in the industry. </p>
 <p style="text-align: justify;">To top it all off, everything we do is backed by our <B>100% Satisfaction Guarantee</B>. We hope you’ll become one of our thousands of loyal customers, and we look forward to building a thriving, long-lasting relationship with you and your business.
 </p>
@@ -38,7 +44,28 @@
 
 </section>
 </div>
-
+<div class="bodyEnd">&nbsp;</div>
 <!-- End Body Section -->
+<script>
+var $ = jQuery;
+
+var tfMain = function() {
+
+
+  $('.sidebar').scrollToFixed({
+    limit: $('.bodyEnd').offset().top,
+    minWidth: 760
+  });
+
+
+};
+
+$('.expandingNav').click(function(){
+  $(this).children('.tfHidden').slideDown();
+  });
+
+$(document).ready(tfMain);
+
+</script>
 
 </body>

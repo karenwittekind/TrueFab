@@ -1,47 +1,76 @@
 <head>
-<title>True Fabrications | Shipping & Deliveries</title>
-<link rel="stylesheet" href="/assets/tf-styles/landingPages.css"></link>
 
+<link rel="stylesheet" href="/assets/tf-styles/landingPages.css">
 
-<link href='http://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet' type='text/css'>
+<script src="/assets/js/jquery-scrolltofixed-min.js"></script>
+<link href="http://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" type="text/css">
 
 <style type="text/css">
 
 
 </style>
-
 </head>
 
 <body>
+
 <div class="tfBodyText">
 <!-- Sidebar -->
-  <nav class="sidebar">
+  <nav class="sidebar" style="position:relative;">
     <h5>About Us</h5>
     <ul>
       <a href="/who"><li>Our Company</li></a>
-      <a href="/about-brands"><li>Our Brands</li></a>
+      <a href="/about-brands"><li class="expandingNav">Our Brands</a>
+        <ul class="tfHidden" style="margin-left:15px;">
+          <a href="/about-brands-viski"><li>Viski</li></a>
+          <a href="/about-brands-viski"><li>True</li></a>
+          <a href="/about-brands-viski"><li>Host</li></a>
+        </ul>
+      </li>
       <a href="/guarantee"><li>Our Guarantees</li></a>   
     </ul>
     <h5>Help & Info</h5>
     <ul>
       <a href="/faq"><li>FAQ</li></a>
-      <a style="color: #B0BC22;" href="/shipping"><li style="font-size: 1em; font-weight: 500; letter-spacing: .05em">Shipping & Deliveries</li></a>
+      <a href="/shipping"><li>Shipping & Deliveries</li></a>
       <a href="/returns"><li>Returns & Exchanges</li></a>
     </ul>
   </nav>
 <!-- End Sidebar -->
   <section id="shipping">
 
-  <h2>Shipping & Deliveries</h2>
+  <h3>Shipping &amp; Deliveries</h3>
 
-  <h3>Same-Day Shipping</h3>
-  <p>We strive to make ordering from True Fabrications as fast and easy as possible.  Place your order before 3:00 PM Pacific Time and we&#39ll ship it the same day.</p>
+  <h4>Same-Day Shipping</h4>
+  <p>We strive to make ordering from True Fabrications as fast and easy as possible.  Place your order before 3:00 PM Pacific Time and we'll ship it the same day.</p>
 
-  <h3>Free Backorder Shipping</h3>
+  <h4>Free Backorder Shipping</h4>
   <p>True Fabrications has an average in-stock rate of 98% on over 2,000 items.  If you happen to order an item that's out of stock we'll ship it directly to you the moment that it's back in our warehouse, free of charge.</p>
 
-  <h3>Shipping Times</h3>
+  <h4>Shipping Times</h4>
   <p>Shipping times will vary depending on your location. The majority of the Pacific Northwest will receive their order the next day, most of the Southwest will receive their order in two business days, the Midwest in three to four business days, and the Eastern Seaboard in five business days. Naturally, inclement weather and other circumstances beyond our control can delay shipping. You can check out estimates specific to your zip code with <a href="http://www.ups.com/maps/results">this map</a> provided by UPS, which we use for most of our shipments (note that we ship from zip code 98057). We're also happy to provide tracking for any order - just give us a call!</p>
 </section>
 </div>
+<div class="bodyEnd">&nbsp;</div>
+<!-- End Body Section -->
+<script>
+var $ = jQuery;
+
+var tfMain = function() {
+
+
+  $('.sidebar').scrollToFixed({
+    limit: $('.bodyEnd').offset().top,
+    minWidth: 760
+  });
+
+
+};
+
+$('.expandingNav').click(function(){
+  $(this).children('.tfHidden').slideDown();
+  });
+
+$(document).ready(tfMain);
+
+</script>
 </body>
