@@ -1,7 +1,7 @@
 <head>
 <link rel="stylesheet" href="/assets/tf-styles/landingPages.css"></link>
 
-
+<script src="/assets/js/jquery-scrolltofixed-min.js"></script>
 <link href='http://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet' type='text/css'>
 
 <style type="text/css">
@@ -147,11 +147,19 @@
 <div class="tfBodyText">
 
 <!-- Sidebar -->
-  <nav class="sidebar">
+<div class="sidebarContainer">
+  <nav class="sidebar" style="position:relative;">
     <h5>About Us</h5>
     <ul>
-      <a href="/who"><li>Our Company</li></a>
-      <a style="color: #B0BC22;" href="/about-brands"><li style="font-weight: 500; letter-spacing: .05em">Our Brands</li></a>
+      <a href="/about"><li>Our Company</li></a>
+      <a href="/about-brands"><li class="expandingNav">Our Brands</a>
+        <ul style="margin-left:15px;">
+          <a href="/about-brands-viski"><li>Viski</li></a>
+          <a href="/about-brands-viski"><li>True</li></a>
+          <a href="/about-brands-viski"><li>Host</li></a>
+          <a href="/about-brands-twine"><li>Twine</li></a>
+        </ul>
+      </li>
       <a href="/guarantee"><li>Our Guarantees</li></a>   
     </ul>
     <h5>Help & Info</h5>
@@ -159,10 +167,10 @@
       <a href="/faq"><li>FAQ</li></a>
       <a href="/shipping"><li>Shipping & Deliveries</li></a>
       <a href="/returns"><li>Returns & Exchanges</li></a>
-      <a href="/contact"><li>Contact Us</li></a>
+      <a href="/contact"><li>Contact</li></a>
     </ul>
   </nav>
-
+</div>
 <!-- End Sidebar -->
 
 <section id="ViskiPage">
@@ -329,4 +337,27 @@
 
 </section>
 </div>
+<div class="bodyEnd">&nbsp;</div>
+<!-- End Body Section -->
+<script>
+var $ = jQuery;
+
+var tfMain = function() {
+
+
+  $('.sidebar').scrollToFixed({
+    limit: $('.bodyEnd').offset().top,
+    minWidth: 760
+  });
+
+
+};
+
+$('.expandingNav').click(function(){
+  $(this).children('.tfHidden').slideDown();
+  });
+
+$(document).ready(tfMain);
+
+</script>
 </body>

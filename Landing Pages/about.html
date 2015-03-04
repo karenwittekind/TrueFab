@@ -4,11 +4,13 @@
 <script src="/assets/js/jquery-scrolltofixed-min.js"></script>
 <link href='http://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet' type='text/css'>
 
+
 </head>
 
 <body>
 <div class="tfBodyText">
 <!-- Sidebar -->
+<div class="sidebarContainer">
   <nav class="sidebar" style="position:relative;">
     <h5>About Us</h5>
     <ul>
@@ -27,12 +29,14 @@
       <a href="/faq"><li>FAQ</li></a>
       <a href="/shipping"><li>Shipping & Deliveries</li></a>
       <a href="/returns"><li>Returns & Exchanges</li></a>
+      <a href="/contact"><li>Contact</li></a>
     </ul>
   </nav>
+</div>
 <!-- End Sidebar -->
 
 <section id="who">
-<h3><span style="margin-bottom:0px;">Welcome to True</h3>
+<h3><span style="margin-bottom:0px;">Our Company</h3>
 <p style="text-align: justify;">Since 2015 True Fabrications is the leading designer and supplier of beverage lifestyle accessories worldwide. From our headquarters in Seattle, Washington we offer the very best on-trend products and branding at the best prices on the market. Our company is anchored by an innovative, future-driven product development team, cutting-edge in-house design and customization departments, sales representatives specialized in everything from national grocery chains to family-owned wineries, and the finest customer service team in the industry. </p>
 <p style="text-align: justify;">To top it all off, everything we do is backed by our <B>100% Satisfaction Guarantee</B>. We hope you’ll become one of our thousands of loyal customers, and we look forward to building a thriving, long-lasting relationship with you and your business.
 </p>
@@ -52,7 +56,7 @@ var tfMain = function() {
 
 
   $('.sidebar').scrollToFixed({
-  	limit: $('.bodyEnd').offset().top,
+    limit: $('.bodyEnd').offset().top,
     minWidth: 760
   });
 
@@ -66,4 +70,5 @@ $('.expandingNav').click(function(){
 $(document).ready(tfMain);
 
 </script>
+
 </body>

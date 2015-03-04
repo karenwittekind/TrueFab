@@ -11,8 +11,7 @@ F A B R I C A T I O N S
  -->
 <link rel="stylesheet" href="/assets/tf-styles/landingPages.css"></link>
 
-
-
+<script src="/assets/js/jquery-scrolltofixed-min.js"></script>
 <link href='http://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet' type='text/css'>
     <style type="text/css">
     
@@ -93,6 +92,10 @@ F A B R I C A T I O N S
       text-align: center;
     }
 
+    .contacticoncontainer {
+      height: 10%;
+    }
+
 
     @media screen and (max-width: 760px){
       .tfThreePanels{
@@ -107,15 +110,40 @@ F A B R I C A T I O N S
 
   <body>
 <div class="tfBodyText">
+<!-- Sidebar -->
+<div class="sidebarContainer">
+  <nav class="sidebar" style="position:relative;">
+    <h5>About Us</h5>
+    <ul>
+      <a href="/about"><li>Our Company</li></a>
+      <a href="/about-brands"><li class="expandingNav">Our Brands</a>
+        <ul class="tfHidden" style="margin-left:15px;">
+          <a href="/about-brands-viski"><li>Viski</li></a>
+          <a href="/about-brands-viski"><li>True</li></a>
+          <a href="/about-brands-viski"><li>Host</li></a>
+        </ul>
+      </li>
+      <a href="/guarantee"><li>Our Guarantees</li></a>   
+    </ul>
+    <h5>Help & Info</h5>
+    <ul>
+      <a href="/faq"><li>FAQ</li></a>
+      <a href="/shipping"><li>Shipping & Deliveries</li></a>
+      <a href="/returns"><li>Returns & Exchanges</li></a>
+      <a href="/contact"><li>Contact</li></a>
+    </ul>
+  </nav>
+</div>
+<!-- End Sidebar -->
 <section id="contact">
-<h3>Contact Us: 800-750-8783</h3>
+<h2>Contact Us</h2>
 <p>We welcome any and all questions, suggestions and requests. Whether a general inquiry or regarding specific products or services, contact us and a member of our team will be more than happy to assist you.</p>
 <p>Check our <a href="/faq">FAQ</a> page for answers to questions about shopping, shipping, privacy and more.</p>
 
 </br>
 <div id="contactInfo">
   <div class="firstContactColumn">
-    <div class="contactRow" style="font-weight:bold;">
+    <div class="contactRow" style="font-family: 'Montserrat';">
       MAIN OFFICE:
     </div>
     <div class="contactRow">
@@ -125,13 +153,13 @@ F A B R I C A T I O N S
     </div>
   </div>
   <div class="secondContactColumn">
-    <div class="contactRow">
+    <div class="contactRow" style="font-family: 'Montserrat';">
       PHONE
     </div>
-    <div class="contactRow">
+    <div class="contactRow" style="font-family: 'Montserrat';">
       FAX
     </div>
-    <div class="contactRow">
+    <div class="contactRow" style="font-family: 'Montserrat';">
       EMAIL
     </div>
   </div>
@@ -147,34 +175,40 @@ F A B R I C A T I O N S
     </div>
   </div>
 </div>
-<h3>Customer Service</h3>
+<h4>Customer Service</h4>
 <p>Want to track your order? We’ll make it happen. Confused about something? We’ll figure it out. Need a problem resolved? We’ll find a way to fix it.</p>
 
 <div class="tfPanelsContainer mobileDisappear">
   <div class="tfThreePanels">
     <h1>Email<br />Support</h1>
     <p>We will reply <br />as soon as possible<br /></p>
+    <div class="contacticoncontainer">
     <img style="margin: 8.5px 0;" src="/assets/images/content/CD_pages/email_icon.png" />
+    </div>
     <br />
-    <a href="mailto:consumer@truefabrications.com"><button class="truefabButton1">
-      Submit Case
+    <a href="mailto:consumer@truefabrications.com"><button class="truefabButton1" style="background: #B0BC22">
+      Email Us
     </button></a>
   </div>
   <div class="tfThreePanels">
     <h1>Chat<br />Support</h1>
     <p>Monday - Friday <br /> 8:00AM - 5:00PM PST</p>
+    <div class="contacticoncontainer">
     <img src="/assets/images/content/CD_pages/chat-icon.png" />
+    </div>
     <br />
-    <a href="#" onclick="window.open('http://a3.websitealive.com/1297/rRouter.asp?groupid=1297&amp;websiteid=0&amp;departmentid=1581&amp;dl='+escape(document.location.href),'','width=400,height=400'); return false;"><button class="truefabButton1">
+    <a href="#" onclick="window.open('http://a3.websitealive.com/1297/rRouter.asp?groupid=1297&websiteid=0&departmentid=1581&dl='+escape(document.location.href),'','width=400,height=400'); return false;"><button class="truefabButton1" style="background: #B0BC22">
       Start Chat!
     </button></a>
   </div>
   <div class="tfThreePanels">
     <h1>Phone<br />Support</h1>
     <p>Monday - Friday <br /> 8:00AM - 5:00PM PST</p>
+    <div class="contacticoncontainer">
     <img src="/assets/images/content/CD_pages/phone-icon.png" />
+    </div>
     <br />
-    <a href="tel://800-750-8783"><button class="truefabButton1">
+    <a href="tel://800-750-8783"><button class="truefabButton1" style="background: #B0BC22">
       800-750-8783
     </button></a>
   </div>
@@ -183,11 +217,29 @@ F A B R I C A T I O N S
   
 </section>
 </div>
+<div class="bodyEnd">&nbsp;</div>
+<!-- End Body Section -->
+<script>
+var $ = jQuery;
 
+var tfMain = function() {
+
+
+  $('.sidebar').scrollToFixed({
+    limit: $('.bodyEnd').offset().top,
+    minWidth: 760
+  });
+
+
+};
+
+$('.expandingNav').click(function(){
+  $(this).children('.tfHidden').slideDown();
+  });
+
+$(document).ready(tfMain);
+
+</script>
   </body>
 
 
-
-
-
-</html>

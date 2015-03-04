@@ -1,38 +1,143 @@
 <head>
-
 <link rel="stylesheet" href="/assets/tf-styles/landingPages.css"></link>
 
 <script src="/assets/js/jquery-scrolltofixed-min.js"></script>
-
 <link href='http://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet' type='text/css'>
 
 <style type="text/css">
 
-
-.tfFourPanels img{
-  width: 125px;
+.center {
+    margin-left: auto;
+    margin-right: auto;
+    width: 60%;
 }
 
-.tfFourPanels p{
-  padding-left: 2.5%;
-  width: 95%;
+#ViskiHeader {
+  margin-bottom: 10%;
+  text-align: center;
 }
 
-.tfFourPanels h3{
-  padding-left: 2.5%;
-  width: 95%;
-}
-
-.tfFourPanels h4{
-  padding-left: 2.5%;
-  width: 95%;
-  font-family: 'Roboto Condensed', 'Helvetica', 'Arial', sans-serif;
-  font-weight: 300;
+#ViskiHeader h4 {
+  font-size: 3em;
+  font-weight: 100;
   letter-spacing: .03em;
+  color: #444444;
+  font-family: 'Raleway', 'Helvetica', 'Arial', sans-serif;
 }
 
+#ViskiHeader p {
+  font-size: 1em;
+  color: #444444;
+  font-family: 'Source Sans Pro', 'Helvetica', 'Arial', sans-serif;
+}
 
+#ViskiHeader img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 20px;
+}
 
+#ViskiBody {
+  text-align: center;
+}
+
+#ViskiBody h6 {
+  font-family: 'Montserrat', 'Helvetica', 'Arial', sans-serif;
+  text-align: center;
+  color: #444444;
+  font-size: 1.25em;
+  letter-spacing: .2em;
+  font-weight: 700;
+  text-transform: uppercase;
+  padding: 0px;
+  margins: 0px;
+}
+
+#ViskiBody p {
+  text-align: center;
+  font-size: 1em;
+  color: #444444;
+  font-family: 'Source Sans Pro', 'Helvetica', 'Arial', sans-serif;
+  margin-bottom: 3%;
+}
+
+.ViskiCollection {
+  margin-bottom: 10%;
+}
+
+.ViskiCollection img {
+  display: inline-block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 0
+}
+
+.ViskiThree {
+  width: 33%;
+  display: inline-block;
+}
+
+.ViskiThree img{
+  position: relative;
+  width: 100%;
+}
+
+.ViskiThreeSpanTwo {
+  width: 66.5%;
+  display: inline-block;
+}
+
+.ViskiThreeSpanTwo img{
+  position: relative;
+  width: 100%;
+}
+
+.ViskiOne {
+  width: 100%;
+}
+
+.ViskiOne img{
+  width: 100%;
+}
+
+.tfPanelsContainer{
+  font-size: 0px;
+  line-height: 0px;
+  display: block;
+  margin-top: .5%;
+}
+
+.viskiButton1 {
+  margin-top: 3%;
+  border-style: solid;
+  border-width: 2px;
+  color: #444444;
+  border-color: #444444;
+  letter-spacing: .06em;
+  background-color: transparent;
+  font-family: 'Source Sans Pro', 'Helvetica', 'Arial', sans-serif;
+  text-transform: uppercase;
+  -o-transition: all 0.2s ease;
+  -moz-transition: all 0.2s ease;
+  -webkit-transition: all 0.2s ease;
+}
+
+  .viskiButton1:hover {
+  color: #ffffff;
+  background-color: #444444;
+  -o-transition: all 0.2s ease;
+  -moz-transition: all 0.2s ease;
+  -webkit-transition: all 0.2s ease;
+}
+
+@media screen and (max-width: 760px) {
+  .center {
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+}
+  }
 
 </style>
 
@@ -41,17 +146,18 @@
 <body>
 <div class="tfBodyText">
 
-
 <!-- Sidebar -->
+<div class="sidebarContainer">
   <nav class="sidebar" style="position:relative;">
     <h5>About Us</h5>
     <ul>
-      <a href="/who"><li>Our Company</li></a>
+      <a href="/about"><li>Our Company</li></a>
       <a href="/about-brands"><li class="expandingNav">Our Brands</a>
         <ul style="margin-left:15px;">
           <a href="/about-brands-viski"><li>Viski</li></a>
           <a href="/about-brands-viski"><li>True</li></a>
           <a href="/about-brands-viski"><li>Host</li></a>
+          <a href="/about-brands-twine"><li>Twine</li></a>
         </ul>
       </li>
       <a href="/guarantee"><li>Our Guarantees</li></a>   
@@ -61,36 +167,174 @@
       <a href="/faq"><li>FAQ</li></a>
       <a href="/shipping"><li>Shipping & Deliveries</li></a>
       <a href="/returns"><li>Returns & Exchanges</li></a>
+      <a href="/contact"><li>Contact</li></a>
     </ul>
   </nav>
+</div>
 <!-- End Sidebar -->
 
-<section id="guarantee">
-<h3>Our Guarantees</h3>
-<p>Helvetica heirloom shabby chic, High Life flannel Williamsburg paleo twee freegan normcore sartorial chillwave. Kale chips you probably haven't heard of them Tumblr disrupt, distillery master cleanse umami Brooklyn kitsch actually direct trade selvage banjo heirloom vinyl.</p>
-<div class="tfPanelsContainer">
-  <div class="tfFourPanels">
-    <img src="/assets/images/content/CD_pages/true_guarantees_bestprice-01.png" />
-    <h4>Best Price</h4>
-    <p>Go Ahead, shop around! If you find a better price, we'll match it.</p>
+<section id="ViskiPage">
+  <div id="ViskiHeader">
+    <img style="width: 100px;" src="/assets/images/content/CD_pages/true_brandlogo_viski.png" />
+    <div class="center">
+    <h4>CIassics, Redefined.</h4>
+    <p>Viski is a collection comprises eight contemporary wine, bar and lifestyle products that marry timeless, classic function and exceptional quality with simple and clean aesthetics.</p>
+    <button class="viskiButton1">Shop Viski</button>
+    </div>
   </div>
-  <div class="tfFourPanels">
-    <img src="/assets/images/content/CD_pages/true_guarantees_satisfaction-01.png" />
-    <h4>100% Satisfaction</h4>
-    <p>Not satisfied? We offer returns or exchanges for ANY reason.</p>
+
+<section id="ViskiBody">
+
+<!-- Admiral -->
+
+    <h6>Admiral <span style="font-family: 'Garamond', serif; text-transform: capitalize; letter-spacing: 0; font-style: italic; font-weight:100;">The Classic Collection</span></h6>
+    <p>Time-honored standards in rich materials, refined in function and rooted in tradition.</p>
+
+  <div class="ViskiCollection">      
+    <div class="ViskiOne">
+     <img src="/assets/images/content/CD_pages/true_brands_viski_admiral1.png" />
+    </div>
+    <div class="tfPanelsContainer">
+    <div class="ViskiThree">
+      <img src="/assets/images/content/CD_pages/true_brands_viski_admiral2.png" />
+    </div>
+    <div class="ViskiThree">
+      <img src="/assets/images/content/CD_pages/true_brands_viski_admiral3.png" />
+    </div>
+    <div class="ViskiThree">
+      <img src="/assets/images/content/CD_pages/true_brands_viski_admiral4.png" />
+    </div>
+    <span class="stretch"></span>
+    </div>
+    <button class="viskiButton1">Shop Admiral</button>
   </div>
-  <div class="tfFourPanels">
-    <img src="/assets/images/content/CD_pages/true_guarantees_fastship-01.png" />
-    <h4>Same Day Shipping</h4>
-    <p>All orders placed before 3:30 PM (PST) will ship out the same day!</p>
+
+<!-- Irving -->
+
+  
+  <h6>Irving <span style="font-family: 'Garamond', serif; text-transform: capitalize; letter-spacing: 0; font-style: italic; font-weight:100;">The Throwback Collection</span></h6>
+  <p>Mid-century modern design reincernates retro vibe.</p>
+
+  <div class="ViskiCollection">
+    <div class="ViskiOne">
+     <img src="/assets/images/content/CD_pages/true_brands_viski_irving1.png" />
+    </div>
+    <div class="tfPanelsContainer">
+    <div class="ViskiThree">
+      <img src="/assets/images/content/CD_pages/true_brands_viski_irving3.png" />
+    </div>
+    <div class="ViskiThreeSpanTwo">
+      <img style="margin-left: 0;" src="/assets/images/content/CD_pages/true_brands_viski_irving5.png" />
+    </div>
+    <span class="stretch"></span>
+    </div>
+    <button class="viskiButton1">Shop Irving</button>
+  </div> 
+
+<!-- Harrison -->
+
+  <h6>Harrison <span style="font-family: 'Garamond', serif; text-transform: capitalize; letter-spacing: 0; font-style: italic; font-weight:100;">The Contemporary Collection</span></h6>
+  <p>Modern essentials in lustrous materials, united by cutting-edge aesthetics.</p>
+
+  <div class="ViskiCollection">    
+    <div class="ViskiOne">
+     <img src="/assets/images/content/CD_pages/true_brands_viski_harrison1.png" />
+    </div>
+    <div class="tfPanelsContainer">
+    <div class="ViskiThree">
+      <img src="/assets/images/content/CD_pages/true_brands_viski_harrison2.png" />
+    </div>
+    <div class="ViskiThree">
+      <img style="margin-left: 0; margin-right: 0;" src="/assets/images/content/CD_pages/true_brands_viski_harrison3.png" />
+    </div>
+    <div class="ViskiThree">
+      <img src="/assets/images/content/CD_pages/true_brands_viski_harrison4.png" />
+    </div>
+    <span class="stretch"></span>
+    </div>
+    <button class="viskiButton1">Shop Harrison</button>
+  </div>    
+
+<!-- Belmont -->
+
+  <h6>Belmont <span style="font-family: 'Garamond', serif; text-transform: capitalize; letter-spacing: 0; font-style: italic; font-weight:100;">The Gold Collection</span></h6>
+  <p>Cornerstones of the modern bar, cast in weighty, resplendent metals.</p>
+
+  <div class="ViskiCollection">    
+    <div class="ViskiOne">
+     <img src="/assets/images/content/CD_pages/true_brands_viski_belmont1.png" />
+    </div>
+    <div class="tfPanelsContainer">
+    <div class="ViskiThree">
+      <img src="/assets/images/content/CD_pages/true_brands_viski_belmont2.png" />
+    </div>
+    <div class="ViskiThree">
+      <img style="margin-left: 0; margin-right: 0;" src="/assets/images/content/CD_pages/true_brands_viski_belmont3.png" />
+    </div>
+    <div class="ViskiThree">
+      <img src="/assets/images/content/CD_pages/true_brands_viski_belmont4.png" />
+    </div>
+    <span class="stretch"></span>
+    </div>
+    <button class="viskiButton1">Shop Belmont</button>
   </div>
-  <div class="tfFourPanels">
-    <img src="/assets/images/content/CD_pages/true_guarantees_nominimums-01.png" />
-    <h4>No Minimums</h4>
-    <p>So you have the flexibility to try out our newest products.</p>
+
+<!-- Raye -->
+
+  <h6>Raye <span style="font-family: 'Garamond', serif; text-transform: capitalize; letter-spacing: 0; font-style: italic; font-weight:100;">The Crystalline Collection</span></h6>
+  <p>Structured artistry, expressed through radiant crystal and glass.</p>
+
+  <div class="ViskiCollection">
+    <div class="ViskiOne">
+     <img src="/assets/images/content/CD_pages/true_brands_viski_raye1.png" />
+    </div>
+    <div class="tfPanelsContainer">
+    <div class="ViskiThree">
+      <img src="/assets/images/content/CD_pages/true_brands_viski_raye2.png" />
+    </div>
+    <div class="ViskiThree">
+      <img style="margin-left: 0; margin-right: 0;" src="/assets/images/content/CD_pages/true_brands_viski_raye3.png" />
+    </div>
+    <div class="ViskiThree">
+      <img src="/assets/images/content/CD_pages/true_brands_viski_raye4.png" />
+    </div>
+    <span class="stretch"></span>
+    </div>
+    <button class="viskiButton1">Shop Raye</button>
+  </div>     
+
+<!-- Professional Barware -->
+
+  <h6>Viski Professional <span style="font-family: 'Garamond', serif; text-transform: capitalize; letter-spacing: 0; font-style: italic; font-weight:100;">The Bartender’s Collection</span></h6>
+  <p>Time-honored standards in rich materials, refined in function and rooted in tradition.</p>
+
+  <div class="ViskiCollection">    
+    <div class="ViskiOne">
+     <img src="/assets/images/content/CD_pages/true_brands_viski_pro1.png" />
+    </div>
+    <div class="tfPanelsContainer">
+    <div class="ViskiThreeSpanTwo">
+      <img style="margin-right: 0;" src="/assets/images/content/CD_pages/true_brands_viski_pro5.png" />
+    </div>
+    <div class="ViskiThree">
+      <img src="/assets/images/content/CD_pages/true_brands_viski_pro3.png" />
+    </div>
+    <span class="stretch"></span>
+    </div>
+    <div class="tfPanelsContainer">     
+    <div class="ViskiThree">
+      <img src="/assets/images/content/CD_pages/true_brands_viski_pro2.png" />
+    </div>
+    <div class="ViskiThreeSpanTwo">
+      <img style="margin-left: 0;" src="/assets/images/content/CD_pages/true_brands_viski_pro7.png" />
+    </div>
+    <span class="stretch"></span>
+    </div>
+    <button class="viskiButton1">Shop Viski Pro</button>
   </div>
-  <span class="stretch"></span>
-</div>
+
+</section>
+
 </section>
 </div>
 <div class="bodyEnd">&nbsp;</div>

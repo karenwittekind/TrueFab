@@ -62,17 +62,18 @@ a:active {
   color: #666666;
   margin-left: 0px;
   margin-right: 0px;
+  text-rendering: optimizelegibility;
 }
 
 /* page titles */
 .tfBodyText h2{
   font-family: 'Montserrat', sans-serif;  
-  margin-bottom: 1em;
+  margin-bottom: .5em;
 }
 
 /* main headings */
 .tfBodyText h3{
-  font-family: 'Roboto', 'Helvetica', 'Arial', sans-serif;
+  font-family: 'Montserrat', sans-serif;
   font-size: 2em;
   color: #666666;
   font-weight: 300;
@@ -236,11 +237,18 @@ max-width: 100%;
 background: #B7B7B7;
 }
 
+.sidebarContainer{
+  width: 20%;
+  display: inline-block;
+  height: 100%;
+  float: left;
+}
+
 
 .sidebar
 {
   float: left;
-  width: 200px;
+  width: 100%;
   position: fixed;
   display: inline-block;
 }
@@ -324,6 +332,8 @@ background: #B7B7B7;
    float: none; 
    margin-left: 200px;
    display: inline-block;
+   width: 70%;
+
 }
 
 #faq h4{
@@ -332,11 +342,19 @@ background: #B7B7B7;
 }
 
 #shipping {
-  max-width: 600px; float: none; display: inline-block;
+  max-width: 600px; 
+  float: none; 
+  display: inline-block;
+  width: 70%;
+
 }
 
 #guarantee {
-  max-width: 800px; float: none; display: inline-block;
+  max-width: 800px; 
+  float: none; 
+  display: inline-block;
+  width: 70%;
+
 }
 
 #guarantee h3 {
@@ -344,7 +362,11 @@ background: #B7B7B7;
 }
 
 #brands {
-  max-width: 800px; float: none; display: inline-block;
+  max-width: 800px; 
+  float: none; 
+  display: inline-block;
+  width: 70%;
+
 }
 
 #brands {
@@ -355,6 +377,7 @@ background: #B7B7B7;
   max-width: 800px; 
   margin: auto;
   display: inline-block;
+  width: 70%;
   float: none;
 }
 
@@ -363,17 +386,25 @@ background: #B7B7B7;
 }
 
 #returns {
-  max-width: 800px; float: none; display: inline-block;
+  max-width: 800px; 
+  float: none; 
+  display: inline-block;
+  width: 70%;
+
 }
 
 #contact {
+  float: none; 
+  display: inline-block;
+  width: 70%;
 
-  float: none; display: inline-block;
 }
 
 #ViskiPage {
-
-  max-width: 800px; display: inline-block; float: none;
+  max-width: 800px; 
+  display: inline-block;
+  width: 70%;
+  float: none;
 }
 
 
