@@ -151,7 +151,7 @@
   <nav class="sidebar" style="position:relative;">
     <h5>About Us</h5>
     <ul>
-      <a href="/about"><li>Our Company</li></a>
+      <a href="/who"><li>Our Company</li></a>
       <a href="/about-brands"><li class="expandingNav">Our Brands</a>
         <ul style="margin-left:15px;">
           <a href="/about-brands-viski"><li>Viski</li></a>
@@ -173,13 +173,13 @@
 </div>
 <!-- End Sidebar -->
 
-<section id="ViskiPage">
+<section id="viski-page">
   <div id="ViskiHeader">
     <img style="width: 100px;" src="/assets/images/content/CD_pages/true_brandlogo_viski.png" />
     <div class="center">
     <h4>CIassics, Redefined.</h4>
     <p>Viski is a collection comprises eight contemporary wine, bar and lifestyle products that marry timeless, classic function and exceptional quality with simple and clean aesthetics.</p>
-    <button class="viskiButton1">Shop Viski</button>
+    <a href="/brands/Brands_Viski"><button class="viskiButton1">Shop Viski</button></a>
     </div>
   </div>
 
@@ -346,7 +346,7 @@ var tfMain = function() {
 
 
   $('.sidebar').scrollToFixed({
-    limit: $('.bodyEnd').offset().top,
+    limit: $('#site-footer').offset().top-$('.sidebar').height(),
     minWidth: 760
   });
 

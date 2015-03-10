@@ -19,12 +19,13 @@
   <nav class="sidebar" style="position:relative;">
     <h5>About Us</h5>
     <ul>
-      <a href="/about"><li>Our Company</li></a>
+      <a href="/who"><li>Our Company</li></a>
       <a href="/about-brands"><li class="expandingNav">Our Brands</a>
         <ul class="tfHidden" style="margin-left:15px;">
           <a href="/about-brands-viski"><li>Viski</li></a>
           <a href="/about-brands-viski"><li>True</li></a>
           <a href="/about-brands-viski"><li>Host</li></a>
+          <a href="/about-brands-twine"><li>Twine</li></a>
         </ul>
       </li>
       <a href="/guarantee"><li>Our Guarantees</li></a>   
@@ -39,6 +40,7 @@
   </nav>
 </div>
 <!-- End Sidebar -->
+
 
   <section id="faq">
 
@@ -128,7 +130,7 @@ var tfMain = function() {
 
 
   $('.sidebar').scrollToFixed({
-    limit: $('.bodyEnd').offset().top,
+    limit: $('#site-footer').offset().top,
     minWidth: 760
   });
 
@@ -136,10 +138,12 @@ var tfMain = function() {
 };
 
 $('.expandingNav').click(function(){
+  if()
+
   $(this).children('.tfHidden').slideDown();
-  });
+});
 
 $(document).ready(tfMain);
 
 </script>
-</body>
+</body> 

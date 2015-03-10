@@ -1,91 +1,129 @@
-<!DOCTYPE HTML>
 <html>
-	
 	<head>
-<style type="text/css">
-
-label {
-	display: block;
-	margin-top: 20px;
-	letter-spacing: 2px;
+		<link href="http://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" type="text/css">
+        <title>True Fabrications | Catalog Request</title>
+        <style type="text/css">
+body{
+font-family: 'Montserrat', sans-serif;
+color: #323232;
+background-color: #e7e7e7;
 }
 
-.body {
-	display: block;
-  margin: 0 auto;
-  width: 576px;
+.form_section{
+    font-family: 'Montserrat', sans-serif;
+    width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #ffffff;
+    padding: 30px;
 }
 
-form {
-  margin: 0 auto;
-  width: 459px;
+#header{
+font-size: 2em;
+color: #b0bc22;
+font-weight: bold;
+font-family: 'Montserrat', sans-serif;
+padding-bottom: 8px;
+padding-top: 10px;
 }
 
-input, textarea {
-  width: 439px;
-  height: 27px;
-  background: #efefef;
-  border: 1px solid #dedede;
-  padding: 10px;
-  margin-top: 3px;
-  font-size: 0.9em;
-  color: #3a3a3a;
-  -moz-border-radius: 5px;
-  -webkit-border-radius: 5px;
-  border-radius: 5px;
+.containerRow{
+    width: 100%;
+    position: relative;
+    display: inline-block;
+    padding-bottom: 10px;
 }
 
-input:focus, textarea:focus {
-  border 1px solid #97d6eb;
+.leftColumn{
+    width: 150px;
+    float:left;
+    padding-right: 0px;
 }
 
-#submit {
-  margin-top: 5px;
-  -webkit-border-radius: 44;
-  -moz-border-radius: 44;
-  border-radius: 7px;
-  font-family: 'Montserrat', sans-serif;
-  color: #ffffff;
-  font-size: 20px;
-  background: #B0BC22;
-  padding: 15px 20px 15px 20px;
-  text-decoration: none;
-  border-width: 0px;
+.rightColumn{
+    float:left;
 }
 
-    #sumit:hover {
-      background: #c4d333;
-      text-decoration: none;
-    }
-
-textarea {
-  height: 213px;
+.submit{
+    width: 200px;
+    height:50px;
+    font-size: 1.5em;
+    font-weight: bold;
+    text-transform: uppercase;
+    border-style: none;
+    background-color: #b0bc22;
+    color: white;
+    font-family: 'Montserrat', sans-serif;
 }
-
-</style>
+		</style>
 	</head>
 	<body>
-		<header class="body">
-		</header>
-		<section class="body">
-			<form method="post" action="/assets/index.php">
-				<label>Name</label>
-				<input name="name" placeholder="Type Here">
-
-				<label>Email</label>
-				<input name="email" type="email" placeholder="Type Here">
-
-				<label>Message</label>
-				<textarea name="message" placeholder="Type Here"></textarea>
-
-        <label>*What is 2+2? (Anti-spam)</label>
-        <input name="human" placeholder="Type Here">
-
-				<input id="submit" name="submit" type="submit" value="Submit">
-			</form>
-		</section>
-		<footer class="body">
-		</footer>
+	<div class="form_section">
+    	<NLFORM>
+        <div id="header">
+	   </div>
+       <div class="containerRow">
+            <div class="leftColumn">Title:</div>
+            <div class="leftColumn" style="font-size:2em; font-weight:bold;"><nltitle></nltitle></div>
+        </div>
+        <div class="containerRow">
+            <div class="leftColumn">Company Name:</div>
+    		<div class="leftColumn" style="font-size:2em; font-weight:bold;"><nlcompanyname></nlcompanyname></div>
+        </div>
+        <div class="containerRow">
+            <div class="leftColumn">Tax ID:</div>
+            <div class="leftColumn" style="font-size:2em; font-weight:bold;"><nlcustentity_ns_ps_taxvat></nlcustentity_ns_ps_taxvat></div>
+        </div>
+        <div class="containerRow">
+    		<div class="leftColumn">First Name:</div>
+            <div class="rightColumn"><nlfirstname></nlfirstname></div>
+        </div>
+        <div class="containerRow">
+    		<div class="leftColumn">Last Name:</div>
+            <div class="rightColumn"><nllastname></nllastname></div>
+    	</div>
+        <div class="containerRow">
+            <div class="leftColumn">Address Line 1:</div>
+            <div class="rightColumn"><nladdress1></nladdress1></div>
+        </div>
+        <div class="containerRow">
+            <div class="leftColumn">Address Line 2:</div>
+            <div class="rightColumn"><nladdress2></nladdress2></div>
+        </div>
+        <div class="containerRow">
+            <div class="leftColumn">City:</div>
+            <div class="rightColumn"><nlcity></nlcity></div>
+        </div>
+        <div class="containerRow">
+            <div class="leftColumn">State:</div>
+            <div class="rightColumn"><nlstate></nlstate></div>
+        </div>
+        <div class="containerRow">
+            <div class="leftColumn">Zip:</div>
+            <div class="rightColumn"><nlzipcode></nlzipcode></div>
+        </div>
+        <div class="containerRow">
+            <div class="leftColumn">Country:</div>
+            <div class="rightColumn"><nlcountry></nlcountry></div>
+        </div>
+        <div class="containerRow">
+            <div class="leftColumn">Phone:</div>
+            <div class="rightColumn"><nlphone></nlphone></div>
+        </div>
+        <div class="containerRow">
+            <div class="leftColumn">Email:</div>
+            <div class="rightColumn"><nlemail></nlemail></div>
+        </div>
+        <div class="containerRow">
+            <div class="leftColumn">Incoming Message:</div>
+            <div class="rightColumn"><nlincomingmessage></nlincomingmessage></div>
+        </div>
+        <div class="containerRow">
+            <div class="leftColumn" style="font-size:2em; font-weight:bold;"><nlsubsidiary></nlsubsidiary></div>
+        </div>
+    		<br>
+    <input value="submit" class="submit" type="submit">
+    </form>
+</div>
 	</body>
-
 </html>

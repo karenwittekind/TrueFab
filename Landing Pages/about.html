@@ -14,12 +14,13 @@
   <nav class="sidebar" style="position:relative;">
     <h5>About Us</h5>
     <ul>
-      <a href="/about"><li>Our Company</li></a>
-      <a href="/about-brands"><li class="expandingNav">Our Brands</a>
+      <a href="/who"><li>Our Company</li></a>
+      <a href="#" onClick="return false;"><li class="expandingNav"><span class="link">Our Brands</span></a>
         <ul class="tfHidden" style="margin-left:15px;">
+          <a href="/about-brands-true"><li>True</li></a>
+          <a href="/about-brands-host "><li>Host</li></a>
+          <a href="/about-brands-twine"><li>Twine</li></a>
           <a href="/about-brands-viski"><li>Viski</li></a>
-          <a href="/about-brands-viski"><li>True</li></a>
-          <a href="/about-brands-viski"><li>Host</li></a>
         </ul>
       </li>
       <a href="/guarantee"><li>Our Guarantees</li></a>   
@@ -34,6 +35,7 @@
   </nav>
 </div>
 <!-- End Sidebar -->
+
 
 <section id="who">
 <h3><span style="margin-bottom:0px;">Our Company</h3>
@@ -50,24 +52,35 @@
 <div class="bodyEnd">&nbsp;</div>
 <!-- End Body Section -->
 <script>
-var $ = jQuery;
+if (SC.ENVIRONMENT.jsEnvironment === 'browser') {
+  var $ = jQuery;
 
-var tfMain = function() {
+  var tfMain = function() {
 
 
-  $('.sidebar').scrollToFixed({
-    limit: $('.bodyEnd').offset().top,
-    minWidth: 760
+    $('.sidebar').scrollToFixed({
+      limit: $('.bodyEnd').offset().top,
+      minWidth: 760
+    });
+
+
+  };
+
+  $('.expandingNav').on('click', function(e){
+    if($(e.target).closest('ul').parent('nav.sidebar').length){
+      if($(this).hasClass('expanded')){
+        $(this).children('.tfHidden').slideUp();
+        $(this).removeClass('expanded');
+      }
+      else{
+        $(this).children('.tfHidden').slideDown();
+        $(this).addClass('expanded');
+      }
+    }
   });
-
-
-};
-
-$('.expandingNav').click(function(){
-  $(this).children('.tfHidden').slideDown();
-  });
-
-$(document).ready(tfMain);
+    
+  tfMain();
+}
 
 </script>
 
