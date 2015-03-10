@@ -2,13 +2,15 @@
 
 <link rel="stylesheet" href="/assets/tf-styles/landingPages.css"></link>
 
+<script src="/assets/js/jquery-scrolltofixed-min.js"></script>
 
 <link href='http://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet' type='text/css'>
 
 <style type="text/css">
 
+
 .tfFourPanels img{
-  width: 95%;
+  width: 125px;
 }
 
 .tfFourPanels p{
@@ -21,6 +23,15 @@
   width: 95%;
 }
 
+.tfFourPanels h4{
+  padding-left: 2.5%;
+  width: 95%;
+  font-family: 'Roboto Condensed', 'Helvetica', 'Arial', sans-serif;
+  font-weight: 300;
+  letter-spacing: .03em;
+}
+
+
 
 
 </style>
@@ -32,46 +43,83 @@
 
 
 <!-- Sidebar -->
-  <nav class="sidebar">
+<div class="sidebarContainer">
+  <nav class="sidebar" style="position:relative;">
     <h5>About Us</h5>
     <ul>
       <a href="/who"><li>Our Company</li></a>
-      <a href="/about-brands"><li>Our Brands</li></a>
-      <a style="color: #B0BC22;" href="/guarantee"><li style="font-size: 1em; font-weight: 500; letter-spacing: .05em">Our Guarantees</li></a>   
+      <a href="/about-brands"><li class="expandingNav">Our Brands</a>
+        <ul class="tfHidden" style="margin-left:15px;">
+          <a href="/about-brands-viski"><li>Viski</li></a>
+          <a href="/about-brands-viski"><li>True</li></a>
+          <a href="/about-brands-viski"><li>Host</li></a>
+          <a href="/about-brands-twine"><li>Twine</li></a>
+        </ul>
+      </li>
+      <a href="/guarantee"><li>Our Guarantees</li></a>   
     </ul>
     <h5>Help & Info</h5>
     <ul>
       <a href="/faq"><li>FAQ</li></a>
       <a href="/shipping"><li>Shipping & Deliveries</li></a>
       <a href="/returns"><li>Returns & Exchanges</li></a>
+      <a href="/contact"><li>Contact</li></a>
     </ul>
   </nav>
+</div>
 <!-- End Sidebar -->
 
-<section id="guarantee">
+
+<section id="guarantee" style="width: 80%;">
+<h3>Our Guarantees</h3>
+<p>We go to great lengths to ensure that ordering from True Fabrications is as fast, easy and carefree as possible. Not only do our guarantees set the industry standard, our customer service is unmatched. In short, your satisfaction is our absolute highest priority - because after all, without our customers we wouldn’t be where we are today.</p>
 <div class="tfPanelsContainer">
   <div class="tfFourPanels">
-    <img src="/assets/images/content/CD_pages/true_guarantees_bestprice.png" />
+    <img src="/assets/images/content/CD_pages/true_guarantees_bestprice-01.png" />
     <h4>Best Price</h4>
-    <p>Go Ahead, shop around! If you find a better price, we'll match it.</p>
+    <p>Go ahead, shop around! If you find a better price, we'll match it.</p>
   </div>
   <div class="tfFourPanels">
-    <img src="/assets/images/content/CD_pages/true_guarantees_satisfaction.png" />
+    <img src="/assets/images/content/CD_pages/true_guarantees_satisfaction-01.png" />
     <h4>100% Satisfaction</h4>
     <p>Not satisfied? We offer returns or exchanges for ANY reason.</p>
   </div>
   <div class="tfFourPanels">
-    <img src="/assets/images/content/CD_pages/true_guarantees_samedayship.png" />
-    <h4>Same-Day Shipping</h4>
+    <img src="/assets/images/content/CD_pages/true_guarantees_fastship-01.png" />
+    <h4>Same Day Shipping</h4>
     <p>All orders placed before 3:30 PM (PST) will ship out the same day!</p>
   </div>
   <div class="tfFourPanels">
-    <img src="/assets/images/content/CD_pages/true_guarantees_nominimums.png" />
+    <img src="/assets/images/content/CD_pages/true_guarantees_nominimums-01.png" />
     <h4>No Minimums</h4>
-    <p>So you have the flexibility to try out our new and best-selling products.</p>
+    <p>So you have the flexibility to try out our newest products.</p>
   </div>
   <span class="stretch"></span>
 </div>
 </section>
+
+<div class="bodyEnd">&nbsp;</div>
+<!-- End Body Section -->
 </div>
+<script>
+var $ = jQuery;
+
+var tfMain = function() {
+
+
+  $('.sidebar').scrollToFixed({
+    limit: $('.bodyEnd').offset().top,
+    minWidth: 760
+  });
+
+
+};
+
+$('.expandingNav').click(function(){
+  $(this).children('.tfHidden').slideDown();
+  });
+
+$(document).ready(tfMain);
+
+</script>
 </body>
